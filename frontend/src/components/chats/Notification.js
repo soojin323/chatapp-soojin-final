@@ -33,7 +33,7 @@ const Notification = () => {
           width="20"
           height="20"
           fill="currentColor"
-          class="bi bi-chat-left-fill"
+          className="bi bi-chat-left-fill"
           viewBox="0 0 16 16"
         >
           <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
@@ -48,12 +48,12 @@ const Notification = () => {
         <div className="notifications-box">
           <div className="notifications-header">
             <h3>Notifications</h3>
-            <di
+            <div
               className="mark-as-read"
               onClick={() => markAllNotificationsAsRead(notifications)}
             >
               Mark all as read
-            </di>
+            </div>
           </div>
           {modifiedNotifications?.length === 0 ? (
             <span className="notification">No notification</span>

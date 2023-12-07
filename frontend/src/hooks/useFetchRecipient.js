@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { baseUrl, getRequest } from "../utils/services";
 
-export const useFetchRecipientUser = (chat, user) => {
+export const useFetchRecipientUser = (chat, user, query) => {
   const [recipientUser, setRecipientUser] = useState(null);
   const [error, setError] = useState(null);
 
@@ -10,22 +10,30 @@ export const useFetchRecipientUser = (chat, user) => {
   useEffect(() => {
     const getUser = async () => {
       if (!recipientId) {
-        console.log('No recipient ID found');
+        console.log("No recipient ID found");
+        setRecipientUser();
         return null;
       }
 
       try {
-        const response = await getRequest(`${baseUrl}/users/find/${recipientId}`);
-        setRecipientUser(response);
-        console.log('Fetched user data:', response);
+        const response = await getRequest(
+          `${baseUrl}/users/find/${recipientId}`
+        );
+
+        const filteredUser = query
+          ? response?.userName?.toLowerCase().includes(query.toLowerCase())
+          : response;
+
+        setRecipientUser(filteredUser ? response : null);
+        console.log("Fetched user data:", response);
       } catch (error) {
-        console.error('Error fetching user:', error);
+        console.error("Error fetching user:", error);
         setError(error);
       }
     };
 
     getUser();
-  }, [recipientId]);
+  }, [recipientId, query]);
 
   return { recipientUser, error };
 };
