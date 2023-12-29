@@ -11,7 +11,7 @@ Our real-time chat application provides a simple and user-friendly platform for 
   3. Database : MongoDB
 
 - **DEMO**
-- <video width="1000px" height="340px" controls>
+ <video width="1000px" height="340px" controls>
     <source src="./images/chatAppDemo.mp4" type="video/mp4">
   </video>
 
