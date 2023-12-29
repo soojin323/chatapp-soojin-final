@@ -94,6 +94,18 @@
   background: rgb(30, 30, 30);
   padding: 1rem;
 }
+
+.send-btn-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: none;
+  background: rgba(72, 112, 223, 1);
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
 .send-btn {
   border: none;
   background: rgba(72, 112, 223, 1);

@@ -96,7 +96,10 @@ const ChatArea = () => {
             borderColor="rgba(72,112,223,0.2)"
           />
         </div>
-        <label className="bi bi-plus send-btn" style={{ cursor: "pointer" }}>
+        <label
+          className="bi bi-plus send-btn-img"
+          style={{ cursor: "pointer" }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
