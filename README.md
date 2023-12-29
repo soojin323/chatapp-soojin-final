@@ -11,16 +11,16 @@ Our real-time chat application provides a simple and user-friendly platform for 
   3. Database : MongoDB
 
 - **DEMO**
- <video width="800px" height="340px" controls>
-    <source src="./images/chatAppDemo.mp4" type="video/mp4">
-  </video>
 
-- **ERD**
-  <img src="./images/ERD.png" width="1000px" height="340px" title="ERD"/>
+https://github.com/soojin323/realtime-chatapp-soojin-yen-bosco-final/assets/56923051/cd81f88c-50a3-44f5-863f-25bd7cd08898
 
-- **Wireframes**
-  <img src="./images/wireframe1.png" width="1000px" height="340px" title="wireframe1"/>
-  <img src="./images/wireframe2.png" width="1000px" height="340px" title="wireframe2"/>
+
+- **ERD**  
+  <img src="./images/ERD.png" width="600px" height="340px" title="ERD"/>  
+
+- **Wireframes**  
+  <img src="./images/wireframe1.png" width="600px" height="340px" title="wireframe1"/>  
+  <img src="./images/wireframe2.png" width="600px" height="340px" title="wireframe2"/>  
 - **User stories**
 
   1. Sending a Message  
